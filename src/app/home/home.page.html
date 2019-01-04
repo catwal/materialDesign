@@ -1,12 +1,26 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="headerTitle">HEADER MATERIAL</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">favorite</mat-icon>
+    <mat-icon class="example-icon">delete</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://beta.ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <mat-form-field>
+    <mat-select placeholder="liste de selection">
+      <mat-option value="none">None</mat-option>
+      <mat-option value="1">Option 1</mat-option>
+      <mat-option value="2">Option 2</mat-option>
+      <mat-option value="3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
 </ion-content>
